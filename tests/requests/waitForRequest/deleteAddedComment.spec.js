@@ -38,4 +38,5 @@ test('Delete just added comment to article created by another user', async ({
 
   await viewArticlePage.open(articleWithoutTags.url);
   await articleHeader.leaveCommentAndWaitRequest('test');
+  await articleHeader.deletecommentAndWaitRequest();
 });
